@@ -7,6 +7,10 @@
 </head>
 <body>
     <?php
+    //SORU 10
+    /*Rastgele bir ülke seçecek bir ülkeler dizisinden
+    yine o seçtiği ülkenin bayrağını resim olarak gösterecek */
+
     ?>
 </body>
 </html>
