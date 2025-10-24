@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+    /**  Soru2: E-posta (Email) Geçerlilik Kontrolü için bir fonksiyona 
+     * şifreyi gönderin şifre ile ilgili bilgilendirme yapsın. 
+     * Aşağıda verilen PHP string fonksiyonlarını kullanarak 
+     * bir e-posta adresinin geçerli olup olmadığını kontrol 
+     * eden bir program yazınız.
+     * İstenilenler:
+     * Kullanıcıdan alınan e-posta adresinin aşağıdaki 
+     * kurallara uyup uymadığını kontrol eden bir PHP programı yazınız:
+     * 
+     * E-posta en az 6 karakter uzunluğunda olmalıdır.
+     * E-posta içinde mutlaka '@' karakteri bulunmalıdır.
+     * '@' işaretinden sonra '.' (nokta) karakteri bulunmalıdır.
+     * '@' işaretinden önce en az bir karakter olmalıdır.
+     * '.' karakterinden sonra en az iki karakter olmalıdır.
+     * Örnek Çalışma:
+     *      * E-posta: nmacit@gelisim.edu.tr 
+     * Çıktı: Geçerli e-posta ✅ 
+     * E-posta: nmacitgelisim.edu.tr 
+     * Çıktı: Geçersiz e-posta ❌ 
+     * '@' karakteri bulunamadı. 
+     * E-posta: @gmail.com 
+     * Çıktı: Geçersiz e-posta ❌ 
+     * '@' öncesinde karakter yok.
+
+ */
+    ?>
+</body>
+</html>

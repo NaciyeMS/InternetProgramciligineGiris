@@ -1,0 +1,142 @@
+/* Genel sayfa ayarları */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* === FORM SAYFASI === */
+.form-container {
+    background: white;
+    padding: 25px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 420px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 12px;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+label input[type="radio"] {
+    margin-right: 6px;
+}
+
+.checkbox {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.gonder {
+    background-color: #28a745;
+    color: white;
+}
+
+.gonder:hover {
+    background-color: #218838;
+}
+
+.temizle {
+    background-color: #dc3545;
+    color: white;
+}
+
+.temizle:hover {
+    background-color: #c82333;
+}
+
+/* === TEŞEKKÜR SAYFASI === */
+.thankyou-container {
+    text-align: center;
+    background: white;
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.thankyou-container h1 {
+    color: #2e7d32;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.thankyou-container p {
+    color: #555;
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0288d1;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #0277bd;
+}

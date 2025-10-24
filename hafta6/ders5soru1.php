@@ -92,7 +92,7 @@
 <!-- Aşağıda örnek form -->
 <div class="form-alani">
   <h3>Form Örneği</h3>
-  <form method="post" action="soru1sayfa2.php">
+  <form method="post" action="ders5soru1sayfa2.php">
     <label>Adınız:</label>
     <input type="text" name="ad" required>
 
