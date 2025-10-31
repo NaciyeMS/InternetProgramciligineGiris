@@ -26,6 +26,25 @@
      * Şifre en az bir büyük harf içermeli. 
      * Şifre en az bir sembol içermeli.
  */
+function sifreKontrol($sifre){
+    $hatalar=[];
+    if(strlen($sifre<8)) $hatalar[]="şifre en az 8 karakter olmalı";
+    if(!preg_match('/[A-Z]/',$sifre)) $hatalar[]="En az 1 büyük harf olmalı";
+    if(!preg_match('/[a-z]/',$sifre)) $hatalar[]="En az 1 küçük harf olmalı";
+    if(!preg_match('/[! @ # $ % & * ( ) - _ + =]/',$sifre)) $hatalar[]="En az sembol içermeli";
+    if(!preg_match('/[1-9]/',$sifre)) $hatalar[]="En az bir rakam içermeli";
+
+    if(empty($hatalar)) echo "şifre kurallara uygun";
+    else {
+        foreach($hatalar as $hata){
+            echo $hata."<br>";
+        }
+    }
+}
+
+
+$gSifre="es123";
+sifreKontrol($gSifre);
     ?>
 </body>
 </html>

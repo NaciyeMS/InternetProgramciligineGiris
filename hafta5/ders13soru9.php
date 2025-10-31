@@ -32,6 +32,31 @@
      * '@' öncesinde karakter yok.
 
  */
+function emailKontrol($email){
+$hatalar=[];
+if(strlen($email)<6) $hatalar[]="Email en az 6 karakter olmalı";
+$atPos=strpos($email,"@"); //yoksa bana false //varsa indis //6
+if($atPos===false)     {$hatalar[]="Email @ işareti içermeli"; }
+else {    if($atPos<1) $hatalar[]="@ öncesinde karakter olmalı";}
+$afterAt=substr($email,$atPos+1); //gelisim.edu.tr
+$dotPos=strPos($email,"."); //. nınbulunduğu indis numarası var 
+if($dotPos===false) {$hatalar[]="@ işaretinden sonra . karakteri bulunmalı";}
+else{    $afterDot=substr($email,$dotPos+1);//edu.tr
+    if($afterDot<2) {$hatalar[]=". dan sonra en az 2 karakter olmalı";}
+}
+if(empty($hatalar)){echo "email geçerli";}
+else{
+    foreach($hatalar as $hata)
+    {
+        echo $hata;
+    }
+}
+
+
+}
+
+$email="nmacitgelisim.";
+emailKontrol($email);
     ?>
 </body>
 </html>

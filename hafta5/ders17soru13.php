@@ -38,7 +38,7 @@ SORU: Fonksiyon, parametre olarak bir sayı alacak
     
     
  }
- puanGoster(5);
+ puanGoster(4);
     ?>
 </body>
 </html>

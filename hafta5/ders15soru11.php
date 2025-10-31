@@ -17,9 +17,34 @@ Tablo hücreleri, Satır X - Sütun Y şeklinde numaralandırılacak.
 Tabloya CSS ile kenarlık (border) ve biraz padding ekleyin.
 Fonksiyonu kullanarak 4 satır ve 3 sütunluk tablo oluşturun.
 
-
  */
+function tabloOlustur($satir,$sutun){
+echo "<style>
+table{ 
+border-collapse:collapse;
+margin:20px;
+}
+td{
+border:1px solid black;
+padding: 8px 12px;
+text-align:center;
+}
+</style>";
+
+echo "<table>";
+for($i=0;$i<$satir;$i++)
+{
+    echo "<tr>";
+    for($j=0;$j<$sutun;$j++)
+    {
+        echo "<td>$i. satır $j.sütun</td>";
+    }
+    echo "</tr>";
+}
+echo "</table>";
+}
     
+tabloOlustur(5,4);
     ?>
 </body>
 </html>
