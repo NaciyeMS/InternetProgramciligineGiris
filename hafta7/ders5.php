@@ -6,8 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    BİRİNCİ SAYFADASINIZ 
-    İKİNCİ SAYFAYA GİTMEK İÇİN
-<a href="ders2.php">tıklayınız</a>
+PHP zaten sayfayı başarıyla döndürürken bunu otomatik gönderir.
+ Manuel olarak da verebilirsin:
+ 200 OK (varsayılan)
+ <?php
+ header("HTTP/1.1 200 OK");
+ ?>
 </body>
 </html>

@@ -6,8 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    BİRİNCİ SAYFADASINIZ 
-    İKİNCİ SAYFAYA GİTMEK İÇİN
-<a href="ders2.php">tıklayınız</a>
+    <?php 
+    //Oluşturulan oturum bilgilerini silmek için
+session_destroy(); 
+//komutu kullanılır.
+    ?>
 </body>
 </html>

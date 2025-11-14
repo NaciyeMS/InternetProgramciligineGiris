@@ -6,8 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    BİRİNCİ SAYFADASINIZ 
-    İKİNCİ SAYFAYA GİTMEK İÇİN
-<a href="ders2.php">tıklayınız</a>
+    <?php 
+    include("ders1.php");
+    echo "burası content kısmı <br>"; 
+   require "ders2.php";
+    ?>
 </body>
 </html>

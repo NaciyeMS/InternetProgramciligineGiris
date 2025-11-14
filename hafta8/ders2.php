@@ -6,8 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    BİRİNCİ SAYFADASINIZ 
-    İKİNCİ SAYFAYA GİTMEK İÇİN
-<a href="ders2.php">tıklayınız</a>
+    bu kısım footer kısmı <br>
 </body>
 </html>

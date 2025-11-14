@@ -8,6 +8,6 @@
 <body>
     BİRİNCİ SAYFADASINIZ 
     İKİNCİ SAYFAYA GİTMEK İÇİN
-<a href="ders2.php">tıklayınız</a>
+<a href="ders4.php">tıklayınız</a>
 </body>
 </html>

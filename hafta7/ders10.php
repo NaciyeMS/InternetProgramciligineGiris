@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    BİRİNCİ SAYFADASINIZ 
-    İKİNCİ SAYFAYA GİTMEK İÇİN
-<a href="ders2.php">tıklayınız</a>
+<body>💥 500 Internal Server Error
+
+    <?php
+header("HTTP/1.1 500 Internal Server Error");
+echo "Sunucu hatası oluştu.";
+exit;
+    ?>
 </body>
 </html>

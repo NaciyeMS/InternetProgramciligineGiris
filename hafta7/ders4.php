@@ -6,8 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    BİRİNCİ SAYFADASINIZ 
-    İKİNCİ SAYFAYA GİTMEK İÇİN
-<a href="ders2.php">tıklayınız</a>
+    <?php 
+    echo "yönlendiriliyorsunuz bekleyiniz";
+    header("refresh:3; url=ders123.php");
+?>
 </body>
 </html>

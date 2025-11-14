@@ -34,6 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $ortalama = $vize * 0.5 + $final * 0.25 + $proje * 0.25;
 
     echo "<h2>Not Ortalamanız: " . number_format($ortalama, 2) . "</h2>";
+    //number_format ondalıklı sayılardan virgülden sonra yazılacak kısmı ayarlamanıza yardımcı olur
 } else {
     echo "<h2>Formdan veri gönderilmedi!</h2>";
 }

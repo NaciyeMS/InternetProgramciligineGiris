@@ -6,8 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    BİRİNCİ SAYFADASINIZ 
-    İKİNCİ SAYFAYA GİTMEK İÇİN
-<a href="ders2.php">tıklayınız</a>
+    <?php 
+    //tüm çerezleri silmek istersen 
+foreach ($_COOKIE as $ad => $deger) {
+    setcookie($ad, "", time() - 3600, "/");
+}
+?>
 </body>
 </html>
