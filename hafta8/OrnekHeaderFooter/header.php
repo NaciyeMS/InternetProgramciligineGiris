@@ -5,7 +5,7 @@
     <title>PHP include örneği</title>
 </head>
 <body>
-    <header style="background-color: #4CAF50; padding: 10px; color: white;">
+    <header style="background-color: #3814c6ff; padding: 10px; color: white;">
         <h2>🌐 Sitemize Hoş Geldiniz</h2>
         <nav>
             <a href="anasayfa.php" style="color:white;">Ana Sayfa</a> |

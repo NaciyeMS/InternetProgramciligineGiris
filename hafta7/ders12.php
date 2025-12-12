@@ -19,7 +19,7 @@
     Time() // komutu anlık zamanı belirtir.
     Time()+3600 // ekleyerek 3600sn eklenmiş olur. Sistemde 1 saat tutulması sağlanır. 
     */
-    setcookie("kullanici","test",time()+3600);
+    setcookie("kullanici","Naciye",time()+3600);
     echo "çerez oluşturuldu";
     /**
      * CHROME İÇİN COOKIE LERE BAKMA

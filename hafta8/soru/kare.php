@@ -65,7 +65,23 @@
     </style>
 </head>
 <body>
-    <form action="khesap.php" method="post">
+    <?php
+$alan = $cevre = $hata = "";
+$r = "";
+
+if(isset($_POST["gonder"])){
+
+    $a = $_POST['a'];
+
+    if(is_numeric($a) && $a > 0){
+        $alan = $a * $a;           // Alan = a²
+        $cevre = 4 * $a;           // Çevre = 4a
+    } else {
+        $hata = "Lütfen geçerli bir sayı giriniz!";
+    }
+}
+?>
+    <form action="" method="post">
         <fieldset>
             <legend>KARE</legend>
             <p><label>Kenar Uzunluğunu Giriniz
@@ -76,5 +92,16 @@
                 </label></p>
         </fieldset>
     </form>
+    <?php if($hata): ?>
+    <p style="text-align:center; color:red;"><?php echo $hata; ?></p>
+<?php endif; ?>
+
+<?php if($alan): ?>
+    <div style="text-align:center; margin-top:20px;">
+        <h2>Sonuçlar</h2>
+        <p>Alan: <b><?php echo round($alan, 2); ?></b></p>
+        <p>Çevre: <b><?php echo round($cevre, 2); ?></b></p>
+    </div>
+<?php endif; ?>
 </body>
 </html>

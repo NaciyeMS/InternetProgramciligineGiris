@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <?php 
+<?php 
  if (isset($_COOKIE["kullanici"])) {
     // Cookie varsa önce silelim
     setcookie("kullanici", "", time() - 3600, "/");
@@ -30,5 +22,14 @@ time() - 3600 → 1 saat önceki bir zaman (yani artık süresi dolmuş)
 Bu kod çalışınca tarayıcı, çerezin süresinin dolduğunu görür ve siler ✅ */
 
     ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
 </body>
 </html>

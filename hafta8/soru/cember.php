@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Çember Hesaplama</title>
-    <style>
+     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f8ff; /* Açık mavi arka plan */
@@ -65,16 +64,49 @@
     </style>
 </head>
 <body>
-    <form action="chesap.php" method="post">
-        <fieldset>
-            <legend>ÇEMBER</legend>
-            <p><label>Yarı Çap giriniz 
-                <input type="text" name="r" value="" />
-                </label></p>
-            <p><label> 
-                <input type="submit" name="gonder" value="HESAPLA" />
-                </label></p>
-        </fieldset>
-    </form>
+
+<?php
+$alan = $cevre = $hata = "";
+$r = "";
+
+if(isset($_POST["gonder"])){
+
+    $r = $_POST["r"];
+
+    if(is_numeric($r) && $r > 0){
+        $alan = pi() * $r * $r;
+        $cevre = 2 * pi() * $r;
+    } else {
+        $hata = "Lütfen geçerli bir yarıçap giriniz!";
+    }
+}
+?>
+
+<form action="" method="post">
+    <fieldset style="width:300px; margin:auto;">
+        <legend>ÇEMBER</legend>
+
+        <label>Yarıçap giriniz:
+            <input type="text" name="r" value="<?php echo $r; ?>">
+        </label>
+
+        <p>
+            <input type="submit" name="gonder" value="HESAPLA">
+        </p>
+    </fieldset>
+</form>
+
+<?php if($hata): ?>
+    <p style="text-align:center; color:red;"><?php echo $hata; ?></p>
+<?php endif; ?>
+
+<?php if($alan): ?>
+    <div style="text-align:center; margin-top:20px;">
+        <h2>Sonuçlar</h2>
+        <p>Alan: <b><?php echo round($alan, 2); ?></b></p>
+        <p>Çevre: <b><?php echo round($cevre, 2); ?></b></p>
+    </div>
+<?php endif; ?>
+
 </body>
 </html>

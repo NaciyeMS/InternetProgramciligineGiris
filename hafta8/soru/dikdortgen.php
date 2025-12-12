@@ -65,7 +65,24 @@
     </style>
 </head>
 <body>
-    <form action="dhesap.php" method="post">
+    <?php
+$alan = $cevre = $hata = "";
+$r = "";
+
+if(isset($_POST["gonder"])){
+
+    $a = $_POST["a"];
+    $b = $_POST["b"];
+
+    if(is_numeric($a) && is_numeric($b) && $a > 0 && $b > 0){
+        $alan = $a * $b;           // Alan = a*b
+        $cevre = 2 * ($a + $b);    // Çevre = 2*(a+b)
+    } else {
+        $hata = "Lütfen geçerli sayılar giriniz!";
+    }
+}
+?>
+    <form action="" method="post">
         <fieldset>
             <legend>DİKDÖRTGEN</legend>
             <p>
@@ -85,5 +102,17 @@
             </p>
         </fieldset>
     </form>
+
+    <?php if($hata): ?>
+    <p style="text-align:center; color:red;"><?php echo $hata; ?></p>
+<?php endif; ?>
+
+<?php if($alan): ?>
+    <div style="text-align:center; margin-top:20px;">
+        <h2>Sonuçlar</h2>
+        <p>Alan: <b><?php echo round($alan, 2); ?></b></p>
+        <p>Çevre: <b><?php echo round($cevre, 2); ?></b></p>
+    </div>
+<?php endif; ?>
 </body>
 </html>

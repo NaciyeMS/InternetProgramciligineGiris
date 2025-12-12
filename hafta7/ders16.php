@@ -17,6 +17,7 @@ $_SESSION["soyad"]="macit";
 //$_SESSION["soyad"] bilgilerini yazmak yeterli olur
 $adsoyad= $_SESSION["ad"]   . "   ".     $_SESSION["soyad"];
   //her sayfada yazılmalı.
+  echo $adsoyad;
 ?>
 
 
